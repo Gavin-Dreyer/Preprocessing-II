@@ -2,7 +2,7 @@
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 0 13% 0 0;
+    margin: 0 12% 0 0;
     
     div {
         width: 35%;
@@ -18,7 +18,7 @@ nav {
         text-decoration: none;
         font-size: 1.5rem;
         color: black;
-        width: 10%;
+        width: 20%;
         
     }
 }
@@ -26,4 +26,17 @@ nav {
 .navBarLine {
     width: 95%;
     .bar();
+}
+
+@media @phone {
+    nav {
+
+        div {
+            width: 100%;
+        }
+
+        a {
+            width: 75%;
+        }
+    }
 }
