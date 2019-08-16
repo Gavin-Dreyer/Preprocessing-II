@@ -23,6 +23,8 @@
     }
   }
 
+
+
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
@@ -59,3 +61,85 @@
     }
   }
 }// home
+
+header {
+  width: 70%;
+  height: auto;
+  margin: 0 auto 0 auto;
+
+  h1 {
+    margin: 2.5% 0 2.5% 0;
+  }
+}
+
+.mainBarLine {
+  .bar();
+  width: 85%;
+}
+
+.btn {
+  .buttons(2rem, @button-bg, white, 85%, center, center, @btnPad, 10px);
+}
+
+@media @phone {
+
+  header {
+    width: 95%;
+
+    img {
+      width: 100%;
+    }
+  }
+  
+  .container {
+
+    .content-section {
+      display: flex;
+      flex-direction: column;
+      margin: 5% 0 5% 3%;
+
+      h2 {
+        width: 200%;
+      }
+
+      p {
+        display: flex;
+        width: 200%;
+      }
+
+      .img-content {
+        width: 85%;
+        display: flex;
+      }
+    }
+    .inverse-content {
+      display: flex;
+      justify-content: space-around;
+  
+      .img-content {
+        display: flex;
+        order: 5;
+      }
+    }
+
+    .content-destination {
+      width: 95% !important;
+    }
+  
+    .content-pick {
+      display: flex;
+      flex-direction: column;
+  
+      .destination {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100% !important;
+
+        .btn {
+          .buttons(2rem, @button-bg, white, 75%, center, center, @btnPadPhone, 10px);
+        }
+      }
+    }
+  }
+}
